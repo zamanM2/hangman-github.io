@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Movie Hangman</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="https://mitchum.blog/wp-content/uploads/2019/05/favicon.png" />
+</head>
+
+<body>
+  <main>
+    <h1>Movie Hangman</h1>
+    <div id="gallows">
+      <img src="hangman0.png" style="padding-left: 70px" id="hangmanImage">
+    </div>
+    <div id="word"></div>
+    <br>
+    <div id="controls">
+      <input type="text" id="guessBox">
+      <button id="guessWordButton" class="button" onclick="guessWord( game )">Guess Word</button>
+      <button id="newGameButton" class="button" onclick="newGame();">New Game</button>
+      <br>
+      <br>
+      <form action="https://www.imdb.com//">
+        <button class="button">You need to spend some time here buddy.</button>
+      </form>
+    </div>
+    <br>
+    <div id="guesses"></div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>

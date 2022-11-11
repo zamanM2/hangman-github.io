@@ -1,0 +1,188 @@
+body {
+    background: url(red_carpet.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+main {
+    max-width: 610px;
+    margin: auto;
+}
+
+h1,
+h5 {
+    text-align: center;
+    color: rgb(255, 255, 153);
+}
+
+.win {
+    color: white;
+    background-color: green;
+}
+
+.loss {
+    color: white;
+    background-color: red;
+}
+
+#word {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 24pt;
+color: rgba(230, 228, 228, 0.9);
+    font: normal 30px Varela Round, sans-serif;
+    animation: move linear 2000ms infinite;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+}
+
+#guesses {
+    text-align: center;
+    font-size: 16pt;
+    color: hsla(0, 0%, 0%, .9);
+        font: normal 30px Varela Round, sans-serif;
+        animation: move linear 2000ms infinite;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+}
+
+.guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 153);
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    #guesses {
+        text-align: center;
+        font-size: 24pt;
+        color: rgb(255, 255, 153);
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace
+    }
+
+    .guess {
+        padding: 30px;
+        display: inline-block;
+        border: 2px solid rgb(59, 14, 207);
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+
+#guessBox {
+    height: 60px;
+    border-radius: 10px;
+    padding-top: 5px;
+    font-size: 18pt;
+    width: 200px;
+    padding-left: 10px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(247, 241, 241);
+    background-color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: rgb(224, 224, 139)
+}
+
+.button:active {
+    background-color: rgb(224, 224, 139);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+
+h1 {
+  color: rgba(230, 37, 37, 0.9);
+  font: normal 70px Varela Round, sans-serif;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 rgb(81, 0, 255),
+      -3px 3px 0 rgb(81, 0, 255),
+      -2px 2px 0 rgb(81, 0, 255),
+      -1px 1px 0 rgb(81, 0, 255),
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 rgb(81, 0, 255),
+      -3px -3px 0 rgb(81, 0, 255),
+      -2px -2px 0 rgb(81, 0, 255),
+      -1px -1px 0 rgb(81, 0, 255),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 rgb(81, 0, 255),
+      3px -3px 0 rgb(81, 0, 255),
+      2px -2px 0 rgb(81, 0, 255),
+      1px -1px 0 rgb(81, 0, 255),
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 rgb(81, 0, 255), 
+      3px 3px 0 rgb(81, 0, 255),
+      2px 2px 0 rgb(81, 0, 255),
+      1px 1px 0 rgb(81, 0, 255),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 rgb(81, 0, 255),
+      -3px 3px 0 rgb(81, 0, 255),
+      -2px 2px 0 rgb(81, 0, 255),
+      -1px 1px 0 rgb(81, 0, 255),
+    ;
+  }  
+}
